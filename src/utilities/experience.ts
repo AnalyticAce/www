@@ -1,38 +1,34 @@
 export const experience = [
   {
-    role: "Software Engineer",
-    company: "Zero Email Inc. (US, remote)",
-    period: "Feb 2025 - Present",
+    role: "Data Scientist",
+    company: "Gozem - Africa's Super App (Gozem Money)",
+    period: "Mar 2025 - Present",
     description:
-      "Software engineer responsible for core features and performance optimisations for an innovative AI-powered email client, focusing on intelligent email processing and real-time collaboration.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Postgres", "Google APIs"],
+      "Partnered with Gozem Money leadership to understand data requirements for the pre-launch phase of a new fintech vertical. Defined +20 critical metrics and KPIs for monitoring fintech service performance. Leveraged SQL and Astro Airflow to design real-time transaction monitoring for 8,000,000+ monthly transactions to detect and prevent fraud, money laundering, and terrorist financing activities.",
+    technologies: ["Python", "Pandas", "Scikit-learn", "SQL", "Looker Studio", "Apache Airflow"],
   },
   {
-    role: "Freelance Developer",
-    period: "Mar 2024 - May 2025",
+    role: "AI Software Engineer",
+    company: "Upwork (Freelancing)",
+    period: "May 2025 - Present",
     description:
-      "Delivering custom web solutions for diverse clients, specialising in e-commerce platforms, content management systems, and business automation tools.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Postgres", "MongoDB", "PayloadCMS", "Google APIs"],
+      "Designing and scaling enterprise-grade backend systems and production-ready AI solutions. Specializing in LLM-powered applications, intelligent agents, and automated workflows using tools like LangChain, LangGraph, and FastAPI. Building robust AI architectures that solve real business problems.",
+    technologies: ["Python", "FastAPI", "LangChain", "LangGraph", "AI Engineering", "LLM"],
   },
   {
-    role: "Front End Developer",
-    company: "Executives Place",
-    period: "Oct 2023 - Feb 2024",
-    description: "Developed and maintained multiple features for the SaaS product, from performance improvements to new features.",
-    technologies: ["Vue.js", "Node.js", "Laravel", "SQL"],
+    role: "Data Scientist",
+    company: "Gozem - Africa's Super App (Product & Analytics Engineering)",
+    period: "Jul 2024 - Feb 2025",
+    description:
+      "Collaborated with the data engineering team to gather, structure, and integrate data from multiple sources into a centralized analytics repository. Assisted in building a data quality monitoring pipeline with anomaly detection. Worked closely with the Head of Data to define core KPIs for tracking app performance.",
+    technologies: ["Python", "SQL", "Firebase", "Data Warehousing", "Analytics", "KPI Development"],
   },
   {
-    role: "Full Stack Developer",
-    company: "XLN Telecom (Daisy Comms)",
-    period: "Nov 2020 - Aug 2023",
-    description: "Developed and maintained the company brochure site to guide and increase sales.",
-    technologies: ["Vue.js", "Nuxt.js", "JavaScript", "SQL", "MongoDB", "C#", "ASP.NET", "WordPress"],
+    role: "Data Analyst",
+    company: "Gozem - Africa's Super App (Ride-hailing Business)",
+    period: "Sep 2023 - Jan 2024",
+    description:
+      "Executed 65%+ of the squad's quarterly tasks, completing 92% of high-priority deliverables efficiently. Investigated transaction data, detecting and dismantling fraudulent schemes, leading to millions in recovered revenue. Automated routine reporting and analytics tasks.",
+    technologies: ["Python", "SQL", "Data Analysis", "Fraud Detection", "Analytics Automation"],
   },
-  // {
-  //   role: "Junior Web Developer",
-  //   company: "Absowebly",
-  //   period: "Jul 2018 - Sep 2018",
-  //   description: "Developing and maintaining client websites with a proprietary CMS.",
-  //   technologies: ["PHP", "HTML", "CSS", "JavaScript", "Sass"],
-  // },
 ];

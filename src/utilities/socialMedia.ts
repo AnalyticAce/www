@@ -1,29 +1,16 @@
 const socialMedia = [
   {
-    name: "calcom",
-    link: "https://cal.link/ahmet",
-  },
-  {
     name: "github",
-    link: "https://dub.sh/ahmetgh",
+    link: "https://github.com/AnalyticAce",
   },
-  {
-    name: "x",
-    link: "https://dub.sh/ahmetx",
-  },
-
   {
     name: "linkedin",
-    link: "https://dub.sh/ahmetli",
+    link: "https://www.linkedin.com/in/shalom-dosseh-4a484a262/",
   },
   {
     name: "email",
-    link: "mailto:ahmetskilinc@icloud.com",
+    link: "mailto:dosseh.contact@gmail.com",
   },
-  // {
-  //   name: "instagram",
-  //   link: "https://dub.sh/ahmetig",
-  // },
 ];
 
 export default socialMedia;

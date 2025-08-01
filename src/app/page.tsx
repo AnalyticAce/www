@@ -19,31 +19,31 @@ export default function Home() {
           <section className="mb-6">
             <AnimateIn variant="fadeUp" delay={0.2}>
               <h1 className="text-xl font-medium tracking-tight mb-4 flex items-baseline justify-between">
-                <span>Hey, I&apos;m Ahmet</span>
+                <span>Hey, I&apos;m Shalom</span>
                 <ThemeToggle />
               </h1>
             </AnimateIn>
             <AnimateIn variant="fadeUp" delay={0.4}>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 max-w-xl mb-8">
-                Software Engineer from London. Open to work. Contact me below. Currently building{" "}
+                Problem Solver, AI SWE from Cotonou, Benin. Open to work. Contact me below. Currently working at{" "}
                 <a
-                  href="https://0.email"
+                  href="https://gozem.co"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-zinc-900 dark:text-zinc-100 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                  onClick={() => track("zero_email_clicked")}
+                  onClick={() => track("gozem_clicked")}
                 >
-                  Zero
+                  Gozem
                 </a>{" "}
-                and{" "}
+                and building AI solutions on{" "}
                 <a
-                  href="https://oss.now"
+                  href="https://www.upwork.com/freelancers/~01f4c84c8b0a6b8b24"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-zinc-900 dark:text-zinc-100 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                  onClick={() => track("oss.now_clicked")}
+                  onClick={() => track("upwork_clicked")}
                 >
-                  oss.now
+                  Upwork
                 </a>
                 .
               </p>
@@ -278,7 +278,7 @@ export default function Home() {
 
       <AnimateIn variant="fadeUp" delay={0.8}>
         <footer className="pt-4 text-xs text-zinc-400 dark:text-zinc-500 flex justify-between items-center">
-          <div>ahmet.studio</div>
+          <div>analyticace.github.io</div>
           <div>Built with Next.js</div>
         </footer>
       </AnimateIn>
