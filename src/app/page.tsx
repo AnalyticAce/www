@@ -3,18 +3,11 @@
 import SocialMedia from "@/components/SocialMedia";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { AnimateIn } from "@/components/animations/AnimateIn";
-import Bun from "@/components/icons/Bun";
-import DrizzleORM from "@/components/icons/Drizzle";
-import Nextjs from "@/components/icons/Next";
-import Nodejs from "@/components/icons/Nodejs";
-import Postgres from "@/components/icons/Postgres";
-import ReactIcon from "@/components/icons/React";
-import TailwindCSS from "@/components/icons/Tailwind";
-import Trpc from "@/components/icons/Trpc";
-import TypeScript from "@/components/icons/Typescript";
-import Vercel from "@/components/icons/Vercel";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
+import { experience } from "@/utilities/experience";
+import { projects } from "@/utilities/projects";
+import { tools } from "@/utilities/tools";
 import { track } from "@vercel/analytics";
 import { ExternalLink } from "lucide-react";
 
@@ -195,10 +188,10 @@ export default function Home() {
           </TabsContent>
           <TabsContent value="tools">
             <AnimateIn variant="fadeUp" delay={0}>
-              <h2 className="text-md font-medium mb-4">Frontend</h2>
+              <h2 className="text-md font-medium mb-4">Programming</h2>
               <section className="mb-12">
                 <div className="flex flex-wrap gap-y-6 gap-x-4 justify-start">
-                  {tools.frontend.map(({ Logo, title }, index) => (
+                  {tools.programming.map(({ Logo, title }, index) => (
                     <AnimateIn key={index} variant="scale" delay={0.1 + index * 0.03} className="w-[calc(25%-12px)] sm:w-[calc(20%-13px)]">
                       <div className="flex flex-col items-center group">
                         <div className="relative h-7 w-7 sm:h-8 sm:w-8 mb-3 transition-all duration-300 ease-out group-hover:scale-110 group-hover:-translate-y-1">
@@ -212,10 +205,61 @@ export default function Home() {
               </section>
             </AnimateIn>
             <AnimateIn variant="fadeUp" delay={0}>
-              <h2 className="text-md font-medium mb-4">Backend and Infrastructure</h2>
+              <h2 className="text-md font-medium mb-4">Data Tools</h2>
               <section className="mb-12">
                 <div className="flex flex-wrap gap-y-6 gap-x-4 justify-start">
-                  {tools.backend_and_infrastructure.map(({ Logo, title }, index) => (
+                  {tools.data_tools.map(({ Logo, title }, index) => (
+                    <AnimateIn key={index} variant="scale" delay={0.1 + index * 0.03} className="w-[calc(25%-12px)] sm:w-[calc(20%-13px)]">
+                      <div className="flex flex-col items-center group">
+                        <div className="relative h-7 w-7 sm:h-8 sm:w-8 mb-3 transition-all duration-300 ease-out group-hover:scale-110 group-hover:-translate-y-1">
+                          <Logo className="h-full w-full" />
+                        </div>
+                        <span className="text-xs text-zinc-500 dark:text-zinc-400 text-center whitespace-nowrap">{title}</span>
+                      </div>
+                    </AnimateIn>
+                  ))}
+                </div>
+              </section>
+            </AnimateIn>
+            <AnimateIn variant="fadeUp" delay={0}>
+              <h2 className="text-md font-medium mb-4">Cloud & DevOps</h2>
+              <section className="mb-12">
+                <div className="flex flex-wrap gap-y-6 gap-x-4 justify-start">
+                  {tools.cloud_devops.map(({ Logo, title }, index) => (
+                    <AnimateIn key={index} variant="scale" delay={0.1 + index * 0.03} className="w-[calc(25%-12px)] sm:w-[calc(20%-13px)]">
+                      <div className="flex flex-col items-center group">
+                        <div className="relative h-7 w-7 sm:h-8 sm:w-8 mb-3 transition-all duration-300 ease-out group-hover:scale-110 group-hover:-translate-y-1">
+                          <Logo className="h-full w-full" />
+                        </div>
+                        <span className="text-xs text-zinc-500 dark:text-zinc-400 text-center whitespace-nowrap">{title}</span>
+                      </div>
+                    </AnimateIn>
+                  ))}
+                </div>
+              </section>
+            </AnimateIn>
+            <AnimateIn variant="fadeUp" delay={0}>
+              <h2 className="text-md font-medium mb-4">Backend Development</h2>
+              <section className="mb-12">
+                <div className="flex flex-wrap gap-y-6 gap-x-4 justify-start">
+                  {tools.backend_dev.map(({ Logo, title }, index) => (
+                    <AnimateIn key={index} variant="scale" delay={0.1 + index * 0.03} className="w-[calc(25%-12px)] sm:w-[calc(20%-13px)]">
+                      <div className="flex flex-col items-center group">
+                        <div className="relative h-7 w-7 sm:h-8 sm:w-8 mb-3 transition-all duration-300 ease-out group-hover:scale-110 group-hover:-translate-y-1">
+                          <Logo className="h-full w-full" />
+                        </div>
+                        <span className="text-xs text-zinc-500 dark:text-zinc-400 text-center whitespace-nowrap">{title}</span>
+                      </div>
+                    </AnimateIn>
+                  ))}
+                </div>
+              </section>
+            </AnimateIn>
+            <AnimateIn variant="fadeUp" delay={0}>
+              <h2 className="text-md font-medium mb-4">Development Tools</h2>
+              <section className="mb-12">
+                <div className="flex flex-wrap gap-y-6 gap-x-4 justify-start">
+                  {tools.development_tools.map(({ Logo, title }, index) => (
                     <AnimateIn key={index} variant="scale" delay={0.1 + index * 0.03} className="w-[calc(25%-12px)] sm:w-[calc(20%-13px)]">
                       <div className="flex flex-col items-center group">
                         <div className="relative h-7 w-7 sm:h-8 sm:w-8 mb-3 transition-all duration-300 ease-out group-hover:scale-110 group-hover:-translate-y-1">
@@ -241,185 +285,3 @@ export default function Home() {
     </main>
   );
 }
-
-const projects = [
-  {
-    title: "oss.now",
-    description: "A place to share your open source projects and find new ones.",
-    link: "https://oss.now",
-    github: "https://github.com/ahmetskilinc/ossdotnow",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Postgres", "DrizzleORM", "Bun", "tRPC", "Vercel"],
-  },
-  {
-    title: "UI Registry",
-    description: "A simple UI registry for components and blocks using the shadcn api.",
-    link: "https://l.ahmet.studio/ui",
-    github: "https://l.ahmet.studio/gh",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
-  },
-  {
-    title: "E-commerce Platform",
-    description: "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-    link: "https://payload-ecommerce-app.vercel.app/",
-    github: "https://github.com/ahmetskilinc/payload-ecommerce",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Payload CMS", "Stripe"],
-  },
-  // {
-  //   title: "Portfolio Website",
-  //   description: "A minimalist portfolio website showcasing projects and skills with a clean, responsive design.",
-  //   link: "https://dub.sh/ahmet/",
-  //   github: "https://github.com/ahmetskilinc/portfolio-new-new-new-new",
-  //   technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-  // },
-  // {
-  //   title: "Work Hours Tracker - web",
-  //   description: "A collaborative task management web application with real-time updates and team functionality.",
-  //   link: "https://work-hours-tracker-chi.vercel.app/",
-  //   github: "https://github.com/ahmetskilinc/work-hours-web",
-  //   technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Web Sockets", "Supabase"],
-  // },
-  // {
-  //   title: "Work Hours Tracker - mobile",
-  //   description: "A collaborative task management mobile application with real-time updates and team functionality.",
-  //   github: "https://github.com/ahmetskilinc/work-hours-app",
-  //   technologies: ["Expo", "React Native", "TypeScript", "Web Sockets", "Supabase"],
-  // },
-  {
-    title: "Payload CMS Appointment Scheduling Plugin",
-    description: "A plugin for Payload CMS that allows users to schedule appointments.",
-    github: "https://github.com/ahmetskilinc/payload-appointments-plugin",
-    technologies: ["Next.js", "TypeScript", "Payload CMS"],
-  },
-  {
-    title: "Payload CMS Media Grid View Plugin",
-    description: "A plugin for Payload CMS that allows users to view media in a grid view.",
-    github: "https://github.com/ahmetskilinc/payload-media-grid-plugin",
-    technologies: ["Next.js", "TypeScript", "Payload CMS"],
-  },
-];
-
-const experience = [
-  {
-    role: "Software Engineer",
-    company: "Zero Email Inc. (US, remote)",
-    period: "Feb 2025 - Present",
-    description:
-      "Software engineer responsible for core features and performance optimisations for an innovative AI-powered email client, focusing on intelligent email processing and real-time collaboration.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Postgres", "Google APIs"],
-  },
-  {
-    role: "Freelance Developer",
-    period: "Mar 2024 - May 2025",
-    description:
-      "Delivering custom web solutions for diverse clients, specialising in e-commerce platforms, content management systems, and business automation tools.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Postgres", "MongoDB", "PayloadCMS", "Google APIs"],
-  },
-  {
-    role: "Front End Developer",
-    company: "Executives Place",
-    period: "Oct 2023 - Feb 2024",
-    description: "Developed and maintained multiple features for the SaaS product, from performance improvements to new features.",
-    technologies: ["Vue.js", "Node.js", "Laravel", "SQL"],
-  },
-  {
-    role: "Full Stack Developer",
-    company: "XLN Telecom (Daisy Comms)",
-    period: "Nov 2020 - Aug 2023",
-    description: "Developed and maintained the company brochure site to guide and increase sales.",
-    technologies: ["Vue.js", "Nuxt.js", "JavaScript", "SQL", "MongoDB", "C#", "ASP.NET", "WordPress"],
-  },
-  // {
-  //   role: "Junior Web Developer",
-  //   company: "Absowebly",
-  //   period: "Jul 2018 - Sep 2018",
-  //   description: "Developing and maintaining client websites with a proprietary CMS.",
-  //   technologies: ["PHP", "HTML", "CSS", "JavaScript", "Sass"],
-  // },
-];
-
-const tools = {
-  frontend: [
-    {
-      Logo: (props: React.SVGProps<SVGSVGElement>) => <ReactIcon {...props} />,
-      title: "React",
-    },
-    {
-      Logo: (props: React.SVGProps<SVGSVGElement>) => <Nextjs {...props} />,
-      title: "NextJS",
-    },
-    // {
-    //   Logo: (props: React.SVGProps<SVGSVGElement>) => <ReactRouter {...props} />,
-    //   title: "React Router",
-    // },
-    // {
-    //   Logo: (props: React.SVGProps<SVGSVGElement>) => <Vue {...props} />,
-    //   title: "VueJS",
-    // },
-    // {
-    //   Logo: (props: React.SVGProps<SVGSVGElement>) => <Nuxt {...props} />,
-    //   title: "NuxtJS",
-    // },
-    // {
-    //   Logo: (props: React.SVGProps<SVGSVGElement>) => <Html {...props} />,
-    //   title: "HTML",
-    // },
-    // {
-    //   Logo: (props: React.SVGProps<SVGSVGElement>) => <Css {...props} />,
-    //   title: "CSS",
-    // },
-    // {
-    //   Logo: (props: React.SVGProps<SVGSVGElement>) => <JavaScript {...props} />,
-    //   title: "Javascript",
-    // },
-    {
-      Logo: (props: React.SVGProps<SVGSVGElement>) => <TypeScript {...props} />,
-      title: "Typescript",
-    },
-    // {
-    //   Logo: (props: React.SVGProps<SVGSVGElement>) => <Sass {...props} />,
-    //   title: "Sass",
-    // },
-    {
-      Logo: (props: React.SVGProps<SVGSVGElement>) => <TailwindCSS {...props} />,
-      title: "TailwindCSS",
-    },
-  ],
-  backend_and_infrastructure: [
-    {
-      Logo: (props: React.SVGProps<SVGSVGElement>) => <Trpc {...props} />,
-      title: "TRPC",
-    },
-    // {
-    //   Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
-    //   title: "Google Cloud",
-    // },
-    // {
-    //   Logo: (props: React.SVGProps<SVGSVGElement>) => <AmazonWebServices {...props} />,
-    //   title: "AWS",
-    // },
-    // {
-    //   Logo: (props: React.SVGProps<SVGSVGElement>) => <Cloudflare {...props} />,
-    //   title: "Cloudflare",
-    // },
-    {
-      Logo: (props: React.SVGProps<SVGSVGElement>) => <Vercel className="fill-black dark:fill-white" {...props} />,
-      title: "Vercel",
-    },
-    {
-      Logo: (props: React.SVGProps<SVGSVGElement>) => <DrizzleORM {...props} />,
-      title: "DrizzleORM",
-    },
-    {
-      Logo: (props: React.SVGProps<SVGSVGElement>) => <Bun {...props} />,
-      title: "Bun",
-    },
-    {
-      Logo: (props: React.SVGProps<SVGSVGElement>) => <Nodejs {...props} />,
-      title: "NodeJS",
-    },
-    {
-      Logo: (props: React.SVGProps<SVGSVGElement>) => <Postgres {...props} />,
-      title: "PostgreSQL",
-    },
-  ],
-};

@@ -1,0 +1,55 @@
+export const projects = [
+  {
+    title: "oss.now",
+    description: "A place to share your open source projects and find new ones.",
+    link: "https://oss.now",
+    github: "https://github.com/ahmetskilinc/ossdotnow",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Postgres", "DrizzleORM", "Bun", "tRPC", "Vercel"],
+  },
+  {
+    title: "UI Registry",
+    description: "A simple UI registry for components and blocks using the shadcn api.",
+    link: "https://l.ahmet.studio/ui",
+    github: "https://l.ahmet.studio/gh",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
+  },
+  {
+    title: "E-commerce Platform",
+    description: "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
+    link: "https://payload-ecommerce-app.vercel.app/",
+    github: "https://github.com/ahmetskilinc/payload-ecommerce",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Payload CMS", "Stripe"],
+  },
+  // {
+  //   title: "Portfolio Website",
+  //   description: "A minimalist portfolio website showcasing projects and skills with a clean, responsive design.",
+  //   link: "https://dub.sh/ahmet/",
+  //   github: "https://github.com/ahmetskilinc/portfolio-new-new-new-new",
+  //   technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+  // },
+  // {
+  //   title: "Work Hours Tracker - web",
+  //   description: "A collaborative task management web application with real-time updates and team functionality.",
+  //   link: "https://work-hours-tracker-chi.vercel.app/",
+  //   github: "https://github.com/ahmetskilinc/work-hours-web",
+  //   technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Web Sockets", "Supabase"],
+  // },
+  // {
+  //   title: "Work Hours Tracker - mobile",
+  //   description: "A collaborative task management mobile application with real-time updates and team functionality.",
+  //   github: "https://github.com/ahmetskilinc/work-hours-app",
+  //   technologies: ["Expo", "React Native", "TypeScript", "Web Sockets", "Supabase"],
+  // },
+  {
+    title: "Payload CMS Appointment Scheduling Plugin",
+    description: "A plugin for Payload CMS that allows users to schedule appointments.",
+    github: "https://github.com/ahmetskilinc/payload-appointments-plugin",
+    technologies: ["Next.js", "TypeScript", "Payload CMS"],
+  },
+  {
+    title: "Payload CMS Media Grid View Plugin",
+    description: "A plugin for Payload CMS that allows users to view media in a grid view.",
+    github: "https://github.com/ahmetskilinc/payload-media-grid-plugin",
+    technologies: ["Next.js", "TypeScript", "Payload CMS"],
+  },
+];
