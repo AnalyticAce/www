@@ -1,19 +1,19 @@
 export const experience = [
   {
-    role: "Data Scientist",
-    company: "Gozem - (Gozem Money)",
-    period: "Mar 2025 - Present",
-    description:
-      "Defined 20+ critical metrics for fintech service performance monitoring. Built real-time transaction monitoring system for 8M+ monthly transactions to prevent fraud and financial crimes using MQL and Apache Airflow.",
-    technologies: ["Python", "Pandas", "Scikit-learn", "MQL", "Looker Studio", "Apache Airflow"],
-  },
-  {
     role: "AI Software Engineer",
     company: "Upwork (Freelancing)",
     period: "May 2025 - Present",
     description:
       "Design and scale enterprise-grade backend systems and production-ready AI solutions. Build LLM-powered applications and intelligent agents using LangChain, LangGraph, and FastAPI.",
     technologies: ["Python", "FastAPI", "LangChain", "LangGraph", "AI Engineering", "LLM"],
+  },
+  {
+    role: "Data Scientist",
+    company: "Gozem - (Gozem Money)",
+    period: "Mar 2025 - Aug 2025",
+    description:
+      "Defined 20+ critical metrics for fintech service performance monitoring. Built real-time transaction monitoring system for 8M+ monthly transactions to prevent fraud and financial crimes using MQL and Apache Airflow.",
+    technologies: ["Python", "Pandas", "Scikit-learn", "MQL", "Looker Studio", "Apache Airflow"],
   },
   {
     role: "Data Scientist",
