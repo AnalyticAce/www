@@ -23,7 +23,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className="font-geist-sans bg-white overscroll-none dark:bg-zinc-900">
-        <ThemeProvider defaultTheme="system" storageKey="ahmet-theme">
+        <ThemeProvider defaultTheme="system" storageKey="shalom-theme">
           {children}
         </ThemeProvider>
       </body>
@@ -43,8 +43,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(getUrl),
   title: {
-    default: "Ahmet Kilinc | Software Engineer | Based in London",
-    template: `%s - Ahmet Kilinc | Software Engineer | Based in London`,
+    default: "Shalom DOSSEH | AI Software Engineer | Based in Cotonou",
+    template: `%s - Shalom DOSSEH | AI Software Engineer | Based in Cotonou`,
   },
   description: "Explore my projects and previous work, or contact me.",
 };
